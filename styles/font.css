@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Arial GEO';
+    src: url('../fonts/ArialGEO.eot');
+    src: url('../fonts/ArialGEO.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialGEO.woff2') format('woff2'),
+        url('../fonts/ArialGEO.woff') format('woff'),
+        url('../fonts/ArialGEO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ALK Sanet';
+    src: url('../fonts/ALKSanet.eot');
+    src: url('../fonts/ALKSanet.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ALKSanet.woff2') format('woff2'),
+        url('../fonts/ALKSanet.woff') format('woff'),
+        url('../fonts/ALKSanet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
