@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
@@ -12,29 +16,56 @@
     <div class="main-box">
         <header class="top-nav-container white">
             <div class="d-flex jc-between">
-                <a href="index.html">
+                <a class="logo-link"href="index.html">
                     <img class="logo"src="images/home page/zootopia logo.png" alt="zootopia-logo">
                 </a>
                 <button class="menu">
                     <div class="burger-menu"></div>
-                    <div class="cat-menu d-flex">
-                        <div class="ear-div1 cat-menu-part tr-rotate100"></div>
-                        <div class="ear-div2 cat-menu-part tr-rotate45"></div>
-                        <div class="ear-div3 cat-menu-part" ng+></div>
-                        <div class="ear-div1 cat-menu-part tr-rotate135"></div>
-                        <div class="ear-div2 cat-menu-part tr-rotate75"></div>
-                    </div>
                     <div class="burger-menu"></div>
-                    <div class="cat-menu d-flex jc-center">
-                        <div class="eye-div cat-menu-part"></div>
-                        <div class="eye-div cat-menu-part"></div>
-                    </div>
                     <div class="burger-menu"></div>
-                    <div class="cat-menu d-flex jc-center mouth-menu">
-                        <div class="mouth1 cat-menu-part"></div>
-                        <div class="mouth2 cat-menu-part"></div>
-                    </div>
                 </button>
+                <div class="menu-content-bg"></div>
+                <div class="menu-list relative">
+                    <div class="menu-header d-flex jc-between">
+                        <ul class="d-flex menu-header-ul">
+                            <li><a class="color6E6E6E color-black" href="index.html">მთავარი</a></li>
+                            <li><a class="color6E6E6E" href="about.html">ჩვენ შესახებ</a></li>
+                            <li><a class="color6E6E6E" href="contact page.html">კონტაქტი</a></li>
+                        </ul>
+                        <div class="d-flex jc-between">
+                            <div class="language-box">
+                                <span>GEO</span>
+                                <span>ENG</span>
+                            </div>
+                            <div>
+                                <span class="d-block font-size24px color-black">(+995) 555 333 222</span>
+                                <span class="d-block color6E6E6E font-size14px">example@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-body">
+                        <div class="search-div d-flex jc-between border-rad10">
+                            <input  class="search-input"type="text" placeholder="ძაღლის საკვები">
+                            <div class="search-icon border-rad6">
+                                <a href="#">
+                                    <img src="images/menu-img/search (1).svg" alt="search">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="animal-menu-list d-flex jc-between">
+                            <button>ძაღლები</button>
+                            <button>კატები</button>
+                            <button>თევზები</button>
+                            <button>ფრინველები</button>
+                            <button>მღრღნელები</button>
+                            <button>რეპტილიები</button>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <img class="menu-img-dog absolute" src="images/menu-img/Image 1.png" alt="dog">
+                </div>
                 <div class="d-flex header-search">
                     <div class="d-flex d-column align-center">
                         <a href="#">
@@ -57,42 +88,38 @@
                 </div>
             </div>
         </header>
-        <section>
-            <div class="container relative">
-                <div class="main-img-box">
-                    <div class="absolute slides">
-                        <img class="main-img main-img1"src="images/home page/main img.jpg" alt="">
+        <section class="slider-sec">
+            <div class="container relative slide mySwiper">
+                <div class="main-img-box swiper-wrapper d-flex">
+                    <div class=" slides swiper-slide">
+                        <img class="main-img main-img1" src="images/home page/main img3.webp" alt="">
                         <div class="absolute home-main-img-text">
                             <h1 class="font-size24px white text-align">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
                             <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
                         </div>
                     </div>
-                    <div class="absolute slides">
-                        <img class="main-img main-img2"src="images/home page/main img2.png" alt="">
+                    <div class="slides swiper-slide">
+                        <img class="main-img main-img2" src="images/home page/main img2.png" alt="">
                         <div class="absolute home-main-img-text">
                             <h1 class="font-size24px white text-align">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
                             <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
                         </div>
                     </div>
-                    <div class="absolute slides">
-                        <img class="main-img main-img3"src="images/home page/main img3.webp" alt="">
+                    <div class=" slides swiper-slide">
+                        <img class="main-img main-img1" src="images/home page/main img.jpg" alt="">
                         <div class="absolute home-main-img-text">
                             <h1 class="font-size24px white text-align">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
                             <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
                         </div>
                     </div>
                 </div>
-                <div class="absolute side-click left d-flex jc-center align-center">
+                <div class="swiper-button-left absolute side-click left bg-colorfff d-flex jc-center align-center">
                     <img src="images/home page/left.svg" alt="left">
                 </div>
-                <div class="absolute side-click right  d-flex jc-center align-center">
+                <div class="swiper-button-right absolute side-click right bg-colorfff  d-flex jc-center align-center">
                     <img src="images/home page/right.svg" alt="right">
                 </div>
-                <div class="absolute btn-main-sliders d-flex">
-                    <span class="button-main-img"></span>
-                    <span class="button-main-img"></span>
-                    <span class="button-main-img"></span>
-                </div>
+                <div class="swiper-paginations absolute btn-main-sliders d-flex jc-center"></div>
             </div>
         </section> 
         <section>
@@ -124,12 +151,12 @@
             </div>
         </section>
         <section>
-            <div class="container d-flex">
+            <div class="container d-flex flex-wrap">
                 <div class="flex1 border-rad10 relative dog-world-box d-flex d-column jc-center align-center">
                     <div class="absolute">
                         <h3 class="white">ძაღლთა სამყარო</h3>
                         <h4 class="font-size24px white">საუკეთესო არჩევანი <span class="font-size18px">ერთგული მეგობრისთვის</span></h4>
-                        <a class="bg-colorfff color-black dog-button border-rad6"href="#">პროდუქციის ნახვა</a>
+                        <a class="bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
                     </div>
                 </div>
                 <div class="flex2">
@@ -152,12 +179,12 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container wrapper-top-products">
-                <h2 class="font-size28px color-black">ტოპ პროდუქცია</h2>
-                <div class="top-products">
-                    <div class="d-flex jc-between">
-                        <div class="top-products-item relative bg-colorfff border-rad10">
+        <section class="top-product-section">
+            <div class=" wrapper-top-products container">
+                <h2 class="container font-size28px color-black">ტოპ პროდუქცია</h2>
+                <div class="top-products swiper card-slider">
+                    <div class="d-flex jc-between swiper-wrapper">
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -174,20 +201,460 @@
                                 <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div></div>
-                        <div></div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swipper-button-next">
+                    <div class="swiper-button-next">
                         <img src="images/home page/right.svg" alt="">
                     </div>
-                    <div class="swipper-button-next">
+                    <div class="swiper-button-prev">
                         <img src="images/home page/left.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container d-flex jc-between">
+                <div class="pay-card flex1 relative border-rad10">
+                    <img src="images/home page/card.jpg" alt="card">
+                    <h4 class="absolute font-size24px color-black">გამოიყენე ჩვენი, <span class="zootopia-color">ზ</span><span class="zootopia-color">ო</span><span class="zootopia-color">ო</span><span class="zootopia-color">ტ</span><span class="zootopia-color">ო</span><span class="zootopia-color">პ</span><span class="zootopia-color">ი</span><span class="zootopia-color">ა</span>ს ბარათი</h4>
+                </div>
+                <div class="flex1 relative rodent-product border-rad10">
+                    <h4><span class="font-size18px">ყველაფერი</span> მღრნელებისთვის</h4>
+                    <a class="bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
+                    <div class="absolute"></div>
+                    <img src="images/home page/rabbit.png" alt="rabbit">
+                </div>
+                <div class="myTopSelling flex1 relative best-selling-box bg-colorfff border-rad10">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
+                            <div class="best-selling d-flex jc-center align-center d-column">
+                                <span class="d-block font-size24px white">135 ₾</span>
+                                <span class="d-block white">160 ₾</span>
+                            </div>
+                            <div class="absolute content-best-selling d-flex d-column align-center">
+                                <img src="images/home page/pedigree.png" alt="pedigree">
+                                <h3 class="color-black font-size18px">პედიგრი</h3>
+                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
+                            <div class="best-selling d-flex jc-center align-center d-column">
+                                <span class="d-block font-size24px white">115 ₾</span>
+                                <span class="d-block white">150 ₾</span>
+                            </div>
+                            <div class="absolute content-best-selling d-flex d-column align-center">
+                                <img src="images/home page/pedigree.png" alt="pedigree">
+                                <h3 class="color-black font-size18px">პედიგრი</h3>
+                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
+                            <div class="best-selling d-flex jc-center align-center d-column">
+                                <span class="d-block font-size24px white">70 ₾</span>
+                                <span class="d-block white">100 ₾</span>
+                            </div>
+                            <div class="absolute content-best-selling d-flex d-column align-center">
+                                <img src="images/home page/pedigree.png" alt="pedigree">
+                                <h3 class="color-black font-size18px">პედიგრი</h3>
+                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-prev absolute side-click left bg-black d-flex jc-center align-center">
+                        <img src="images/home page/white left.svg" alt="left">
+                    </div>
+                    <div class="button-next absolute side-click right bg-black d-flex jc-center align-center">
+                        <img src="images/home page/white right.svg" alt="right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-product-section">
+            <div class=" wrapper-top-products container">
+                <h2 class="container font-size28px color-black">ტოპ პროდუქცია</h2>
+                <div class="top-products swiper card-slider">
+                    <div class="d-flex jc-between swiper-wrapper">
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>160 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="images/home page/pedigree.png" alt="">
+                            <h3>პედიგრი</h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">600გრ</div>
+                                <div class="weight-box d-flex jc-center align-center">2 კგ.</div>
+                                <div class="weight-box d-flex jc-center align-center">5 კგ..</div>
+                                <div class="weight-box d-flex jc-center align-center">13 კგ.</div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <span>135 ₾</span> 
+                                <span>100 ₾</span>
+                                <span class="shopping-cart-icon"><img src="images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="images/home page/right.svg" alt="">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="images/home page/left.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container border-rad10 relative bg-colorF5AD00 cover-natural-product">
+                <p class="absolute">100% ნატურალური პროდუქცია შენი საუკეთესო მეგობრისათვის</p>
+                <a class="absolute bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
+                <img class="absolute" src="images/home page/tortoise.png" alt="tortoise">
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="container font-size28px color-black">ბრენდები</h2>
+            </div>
+        </section>
+        <footer class="footer-box">
+            <div class="container">
+                <div class="d-flex jc-between">
+                    <div>
+                        <a href="index.html"><img src="images/home page/zootopia logo.png" alt=""></a>
+                        <p class="footer-para">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა,
+                           როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.
+                        </p>
+                    </div>
+                    <div class="d-flex jc-between flex-wrap">
+                        <div class="footer-nav">
+                            <h3>კატეგორიები</h3>
+                            <ul>
+                                <li><a href="#">ძაღლები</a></li>
+                                <li><a href="#">კატები</a></li>
+                                <li><a href="#">თევზები</a></li>
+                                <li><a href="#">ფრინველები</a></li>
+                                <li><a href="#">მღრნელები</a></li>
+                                <li><a href="#">რეპტილიები</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav">
+                            <h3>მენიუ</h3>
+                            <ul>
+                                <li><a href="#">მთავარი</a></li>
+                                <li><a href="#">წესები და პირობები</a></li>
+                                <li><a href="#">ავტორიზაცია</a></li>
+                                <li><a href="#">რეგისტრაცია</a></li>
+                                <li><a href="#">კონტაქტი</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav">
+                            <h3>კონტაქტი</h3>
+                            <ul>
+                                <li>თბილისი, დადიასნი ქ. N:124</li>
+                                <li>(+995) 555 333 222</li>
+                                <li>example@gmail.com</li>
+                            </ul>
+                            <div class="fb-icon-bg border-rad6 d-flex jc-center align-center">
+                                <img src="images/home page/facebook-f.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex jc-between footer-bottom">
+                    <span class="Conf">ყველა უფლება დაცულია.</span>
+                    <span>დამზადებულია <span class="smart-web">Smartweb</span> -ში</span>
+                    <div>
+                       <img src="images/home page/Logo white.svg" alt="">
+                       <img src="images/home page/Logo white.svg" alt="">
+                       <img src="images/home page/Logo white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
+    
     <script src="app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".card-slider", {
+            slidesPerView: 4,
+            spaceBetween: 26,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+             el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+    });
+    function slider(){
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-paginations",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-right",
+          prevEl: ".swiper-button-left",
+        },
+      });
+    }
+    slider();
+
+    var swiper = new Swiper(".myTopSelling", {
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

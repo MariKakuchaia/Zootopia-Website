@@ -1,67 +1,22 @@
-const buttonMainImg =document.querySelectorAll('.button-main-img');
-const imgSlides =document.querySelectorAll('.main-img');
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
-let index = 0;
+const menuClick = document.querySelector(".menu");
+const menuContentBg = document.querySelector(".menu-content-bg");
+const menuList = document.querySelector(".menu-list");
+const logo = document.querySelector(".logo-link");
+const headerSearch = document.querySelector(".header-search");
 
-left.addEventListener("click",function(){
-    leftSlide();
-})
 
-right.addEventListener("click",function(){
-    rightSlide();
-})
-
-function leftSlide(){
-    if(index==0){
-        index=imgSlides.length-1;
-    }
-    else{
-        index--;
-    }
+function showMenu(){
+    menuClick.addEventListener("click",function(){
+        menuClick.classList.toggle("move");
+        menuContentBg.classList.toggle("active");
+        menuList.classList.toggle('open');
+        logo.classList.toggle("display-none");
+        headerSearch.classList.toggle("display-none");
+    })
 }
-
-function rightSlide(){
-    if(index==imgSlides.length-1){
-        index=0;
-    }
-    else{
-        index++;
-    }
-}
+ showMenu();
 
 
 
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function changeButton(){
-//     const btnMainSliders = document.querySelectorAll(".slider-button");
-
-//     for(let i=0; i<btnMainSliders.length; i++){
-//         btnMainSliders[i].addEventListener("click",function(){
-//             btnMainSliders[i].classList.add("slider-button-change");
-//             console.log(btnMainSliders[i]);
-//         })
-        
-//     }
-// }
-// changeButton();
 
