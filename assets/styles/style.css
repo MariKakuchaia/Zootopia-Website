@@ -89,6 +89,9 @@ body{
 .line-through{
     text-decoration: line-through;
 }
+.margin-0auto{
+    margin: 0 auto;
+}
 
 /*-------------------top header start--------------------*/
 .main-box{
@@ -210,10 +213,18 @@ body{
 .header-search div{
     margin-right: 30px;
 }
+@media (max-width:800px) {
+    .header-search{
+        display: none;
+    }
+    .menu{
+        left: 88%;
+    }
+}
 /*--------------main page main picture---------------*/
 .container{
     max-width: 1186px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .slider-sec{
@@ -644,6 +655,11 @@ body{
     padding:22px 15px;
     cursor: pointer;
 }
+@media (max-width:1320px) {
+    .myBrends{
+        width: 80%;
+    }
+}
 /*---------------------footer styles-------------------*/
 .footer-box{
     padding: 130px 0 46px 0;
@@ -746,4 +762,180 @@ body{
 }
 .all-details p{
     margin: 4.5px 0px;
+}
+@media (max-width:1224px) {
+    .d-block{
+        display: block;
+    }
+    .dog-world-box{
+        height: 240px;
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .dog-world-box div{
+        top:40px;
+    }
+   .cat-world-box{
+        width: 90%;
+        margin: 20px auto 0;
+        height: 240px;
+   }
+   .bird-world-box{
+       margin: 0 auto;
+   }
+   .fish-world-box{
+       margin: 0px auto;
+   }
+   .fish-and-bird{
+    justify-content: space-around;
+   }
+   .home-offers-box{
+       justify-content: space-around;
+   }
+   .offer-box{
+    width: 35%;
+    margin-bottom: 20px;
+   } 
+   .cover-natural-product img{
+    right: -28px;
+    top:102px;
+    width: 250px;
+   }
+}
+@media (max-width:900px) {
+    .fish-and-bird{
+        display: block;
+    }
+    .fish-and-bird div{
+        width: 90%;
+    }
+    .fish-and-bird h4{
+        margin-bottom: 60px;
+    }
+    .fish-img{
+        left: -140px;
+        transform:rotate(-10deg);
+    }
+    .fish-world-box{
+        margin-bottom: 20px;
+    }
+    .bird-img{
+        z-index: 3;
+        width: 206px;
+    }
+
+}
+@media (max-width:860px) {
+    .footer-body{
+        display: block;
+    }
+    .footer-nav{
+        margin: 20px 5px;
+    }
+    .cover-natural-product p{
+        width: 350px;
+    }
+    .cover-natural-product a{
+        bottom: 23px;
+        left: 100px;
+    }
+}
+@media (max-width:700px) {
+    .offer-box{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:650px) {
+    .footer-nav{
+        margin-right: 0;
+    }
+    .cover-natural-product{
+        overflow: hidden;
+    }
+    .cover-natural-product p{
+        top: 32px;
+        left: 26px;
+        width: 290px;
+    }
+    .cover-natural-product img{
+        width: 250px;
+        top: 118px;
+        right: -74px;
+    }
+    .cover-natural-product a{
+        bottom: 34px;
+        left: 26px;
+    }
+    .top-products-item p {
+        width: auto;
+    }
+    .dog-world-box h4{
+        width: 200px;
+    }
+    .font-size18-resp650{
+        font-size: 18px;
+    }
+    .font-size14-resp650{
+        font-size: 14px;
+    }
+    .fish-img{
+        width: 180px;
+        left:-40px;
+        bottom:-38px;
+    }
+    .fish-world-box h4{
+        left:20px;
+        width: 200px;
+    }
+    .cat-world-box h4{
+        width: 200px;
+    }
+    .slider-sec{
+        height: 280px;
+        margin-top: 64px;
+    }
+    .top-nav-container{
+        position: fixed;
+        top: 0px;
+        z-index: 200;
+    }
+    .swiper-button-left {
+        display: none;
+    }
+    .swiper-button-right{
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .footer-box{
+        padding-top: 0px;
+    }
+    .footer-body{
+        display: none;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .pay-options{
+        margin-bottom: 80px;
+    }
+    .conf{
+        margin-top: 8px;
+    }
+    .cover-natural-product img{
+        width: 180px;
+        top: 140px;
+        right: -74px;
+    }
+    .cover-natural-product p{
+        font-size: 20px;
+        width: 150px;
+    }
+    .logo{
+        height: auto;
+    }
 }
