@@ -50,6 +50,9 @@ ul{
 .color-black{
     color:#111111;
 }
+.font-size10px{
+    font-size: 10px;
+}
 .font-size24px{
     font-size: 24px;
 }
@@ -921,8 +924,7 @@ body{
         display: block;
     }
     .myBrends2{
-        max-width: 1186px;
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         margin-left: 20px;
     }
@@ -939,6 +941,7 @@ body{
 @media (max-width:400px) {
     .footer-box{
         padding-top: 0px;
+        margin-bottom: 50px;
     }
     .footer-body{
         display: none;
@@ -969,5 +972,24 @@ body{
     }
     .header-for-responsive{
         display: block;
+        position: fixed;
+        bottom: 0px;
+        z-index: 200;
+        width: 100%;
+        padding: 12px;
+    }
+    .menu-resp{
+        border-style: none;
+        background: none;
+        cursor: pointer;
+    }
+    .menu-resp div{
+        background-color: #FFFFFF;
+    }
+    .menu-resp-box{
+       background-color: #74B42C;
+       border-radius: 50%;
+       width: 40px;
+       height: 40px;
     }
 }
