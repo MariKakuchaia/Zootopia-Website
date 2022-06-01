@@ -50,9 +50,6 @@ ul{
 .color-black{
     color:#111111;
 }
-.font-size10px{
-    font-size: 10px;
-}
 .font-size24px{
     font-size: 24px;
 }
@@ -101,6 +98,9 @@ body{
     background-color: #FAFAFA;
 }
 .header-for-responsive{
+    display: none;
+}
+.language-box-resp{
     display: none;
 }
 .top-nav-container{
@@ -418,6 +418,9 @@ body{
     margin: 30px 0;
 }
 /*----------------------top  products------------------------*/
+.resp-top-product-wrapper{
+    display: none;
+}
 .wrapper-top-products h2{
     margin-top: 75px;
     margin-bottom: 31px ;
@@ -854,6 +857,40 @@ body{
         width: 70%;
         margin-bottom: 10px;
     }
+    .top-product-section{
+        display: none;
+    }
+    .resp-top-product-wrapper{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        background-color: #E7E7E74D;
+    }
+    .resp-top-product{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 20px auto;
+        height: 442px;
+        overflow: scroll;
+        overflow-x: hidden;
+        box-sizing: content-box;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .resp-top-product div{
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+
+    }
+    .resp-top-product div img{
+        width: 55px;
+    }
 }
 @media (max-width:650px) {
     .footer-nav{
@@ -978,6 +1015,9 @@ body{
         width: 100%;
         padding: 12px;
     }
+    .menu{
+        display: none;
+    }
     .menu-resp{
         border-style: none;
         background: none;
@@ -991,5 +1031,17 @@ body{
        border-radius: 50%;
        width: 40px;
        height: 40px;
+    }
+    .language-box-resp{
+        display: block;
+    }
+    .language-box-resp span{
+        color: #242424;
+        font-size: 14px;
+    }
+    .resp-menu-list{
+        font-size: 10px;
+        color:#242424;
+        margin-top: 8px;
     }
 }
