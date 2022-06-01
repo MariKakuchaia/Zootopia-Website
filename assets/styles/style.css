@@ -97,6 +97,9 @@ body{
 .main-box{
     background-color: #FAFAFA;
 }
+.header-for-responsive{
+    display: none;
+}
 .top-nav-container{
     max-width: 1276px;
     width: 100%;
@@ -629,6 +632,9 @@ body{
     right: 50px;
 }
 /*------------------------brands slider------------------*/
+.resp-myBrends{
+    display: none;
+}
 .myBrends{
     max-width: 1186px;
     width: 100%;
@@ -907,6 +913,29 @@ body{
         display: none;
     }
 }
+@media (max-width:520px) {
+    .myBrends{
+        display: none;
+    }
+    .resp-myBrends{
+        display: block;
+    }
+    .myBrends2{
+        max-width: 1186px;
+        width: 100%;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+    .swiper-next{
+        display: none;
+    }
+    .swiper-prev{
+       display: none;
+    }
+    .brand-img-div img{
+        height: 90px;
+    }
+}
 @media (max-width:400px) {
     .footer-box{
         padding-top: 0px;
@@ -937,5 +966,8 @@ body{
     }
     .logo{
         height: auto;
+    }
+    .header-for-responsive{
+        display: block;
     }
 }

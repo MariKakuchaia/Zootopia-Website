@@ -90,6 +90,13 @@
                 </div>
             </div>
         </header>
+        <div class="header-for-responsive bg-colorfff">
+            <div><img src="assets/images/home page/home-alt.svg" alt=""></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <section class="slider-sec">
             <div class="container relative slide mySwiper">
                 <div class="main-img-box swiper-wrapper d-flex">
@@ -606,6 +613,29 @@
                 <img src="assets/images/home page/left.svg" alt="">
             </div>
         </section>
+        <section class="relative resp-myBrends">
+            <div  class="myBrends2">
+                <div class="swiper-wrapper brands-imgBox">
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/eukanuba.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/chappi.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
+                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
+                </div>
+            </div>
+            <!-- <div class="swiper-next2 bg-colorfff absolute d-flex jc-center align-center">
+                <img src="assets/images/home page/right.svg" alt="">
+            </div>
+            <div class="swiper-prev2 bg-colorfff absolute d-flex jc-center align-center">
+                <img src="assets/images/home page/left.svg" alt="">
+            </div> -->
+        </section>
         <footer class="footer-box">
             <div class="container">
                 <div class="d-flex jc-between footer-body">
@@ -669,26 +699,23 @@
 
       <!-- Initialize Swiper -->
     <script>
+         var swiper = new Swiper('.myBrends2', {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    //   navigation: {
+    //     nextEl: '.swiper-next2',
+    //     prevEl: '.swiper-prev2',
+    //   },
+    });
+
         var swiper = new Swiper('.myBrends', {
       slidesPerView: 6,
       spaceBetween: 26,
-      direction: getDirection(),
       navigation: {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
       },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        },
-      },
     });
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-      return direction;
-    }
         var swiper = new Swiper(".top-product-slider", {
             slidesPerView: 4,
             spaceBetween: 26,
