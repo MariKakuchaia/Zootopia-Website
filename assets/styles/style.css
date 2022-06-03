@@ -510,11 +510,13 @@ body{
 /*----------------------pay info section-----------------------*/
 .pay-card{
     height: 500px;
+
 }
 .pay-card img{
     width: 100%;
     position: absolute;
     top: 0;
+    border-radius: 10px;
 }
 .pay-card h4{
     top:85px;
@@ -814,6 +816,53 @@ body{
     width: 250px;
    }
 }
+@media(max-width:950px){
+    .pay-top-sale{
+        display: block;
+    }
+    .pay-card{
+        margin: 20px auto 10px;
+        max-width: 370px;
+        width:90%;
+        height: 350px;
+    }
+    .pay-card img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .rodent-product{
+        margin:10px auto;
+        max-width: 370px;
+        width:90%;
+        height: 350px;
+
+    }
+    .myTopSelling{
+        margin: 10px auto;
+        max-width: 370px;
+        width:90%;
+        height: 380px;
+    }
+    .button-prev{
+        width: 30px;
+        height: 30px;
+        top:50%;
+    }
+    .button-prev img{
+        width:15px;
+    }
+    .button-next{
+        width: 30px;
+        height: 30px;
+        top:50%;
+    }
+    .button-next img{
+        width: 15px;
+    }
+    .content-best-selling img{
+        width: 80px;
+    }
+}
 @media (max-width:900px) {
     .fish-and-bird{
         display: block;
@@ -851,6 +900,10 @@ body{
         bottom: 23px;
         left: 100px;
     }
+    .contact-page{
+        flex-direction: column;
+        margin-bottom: -100px;
+    }
 }
 @media (max-width:700px) {
     .offer-box{
@@ -863,7 +916,7 @@ body{
     .resp-top-product-wrapper{
         display: block;
         width: 90%;
-        margin: 0 auto;
+        margin: 20px auto;
         padding-bottom: 60px;
         background-color: #E7E7E74D;
     }
@@ -886,12 +939,24 @@ body{
         align-items: center;
         justify-content: center;
         padding: 15px 20px;
+        margin: 5px;
 
     }
     .resp-top-product div img{
         width: 55px;
     }
+    .best-sellig-div-button{
+        width: 192px;
+        margin: 0 auto;
+    }
+    .best-sellig-div-button a{
+        width: 100%;
+        margin: 0 auto;
+        padding: 14px 10px;
+        font-size: 14px;
+    }
 }
+
 @media (max-width:650px) {
     .footer-nav{
         margin-right: 0;
@@ -951,6 +1016,41 @@ body{
     }
     .swiper-button-right{
         display: none;
+    }
+    .rodent-product img{
+        right: -50px;
+        bottom: -31px;
+        width: 400px;
+    }
+    .contact-section{
+        width: 90%;
+        margin: 150px auto 0px;
+    }
+    .contact-section iframe{
+        width: 100%;
+        height: 130px;
+        margin-bottom: 10px;
+    }
+    .page-location :first-child{
+        display: none;
+    }
+    .page-location img{
+        display: none;
+    }
+    .about-page-body{
+        margin-top: 150px;
+        position: relative;
+        margin-bottom: -100px;
+    }
+    .about-img{
+        height: 130px;
+        width: 100%;
+        position: absolute;
+        top:50px;
+        left:0;
+    }
+    .info-aboutus{
+        margin-top: 200px;
     }
 }
 @media (max-width:520px) {
@@ -1043,5 +1143,28 @@ body{
         font-size: 10px;
         color:#242424;
         margin-top: 8px;
+    }
+    .best-sellig-div-button{
+        width: 145px;
+    }
+    .best-sellig-div-button a{
+        font-size: 10px;
+    }
+    .resp-top-product div img{
+        width: 35px;
+    }
+    .pay-card h4{
+        width:184px;
+        font-size: 18px;
+    }
+    .rodent-product h4{
+        width: auto;
+        font-size: 20px;
+    }
+    .rodent-product a{
+        padding: 10px;
+    }
+    .best-selling{
+        display: none;
     }
 }
