@@ -92,6 +92,9 @@ body{
 .margin-0auto{
     margin: 0 auto;
 }
+.line-height{
+    line-height: 1.3;
+}
 
 /*-------------------top header start--------------------*/
 .main-box{
@@ -421,6 +424,9 @@ body{
 .resp-top-product-wrapper{
     display: none;
 }
+.resp-first-top-products{
+    display: none;
+}
 .wrapper-top-products h2{
     margin-top: 75px;
     margin-bottom: 31px ;
@@ -457,6 +463,12 @@ body{
     border-radius: 4px;
     margin: 7px;
     cursor: pointer;
+}
+.weight-box:active{
+    background-color: #F5621F;
+}
+.weight-box input{
+    display: none;
 }
 .percent-icon{
     padding: 14px;
@@ -910,6 +922,9 @@ body{
         width: 70%;
         margin-bottom: 10px;
     }
+    .resp-first-top-products{
+        display: block;
+    }
     .top-product-section{
         display: none;
     }
@@ -923,7 +938,6 @@ body{
     .resp-top-product{
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
         margin: 20px auto;
         height: 442px;
         overflow: scroll;
