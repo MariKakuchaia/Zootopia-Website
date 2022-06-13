@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="assets/styles/font.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <title>ZOOTOPIA</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="main-box">
+    <div>
         <header class="top-nav-container white">
             <div class="d-flex jc-between align-center">
                 <a class="logo-link"href="index.html">
@@ -81,13 +77,13 @@
                                             <li><a href="#">საქციელის კორეკტირება</a></li>
                                             <li><a href="#">სავარცხლები</a></li>
                                             <li><a href="#">მაკრატლები</a></li>
-                                            <li><a href="#">ყველას ნახვა</a></li>
+                                            <li><a href="category.html">ყველას ნახვა</a></li>
                                         </ul>
                                     </div>
                                     <div class="product-levels">
                                         <h2>მეორე დონე</h2>
                                         <ul>
-                                            <li><a href="">ზრდასრული ძაღლები</a></li>
+                                            <li><a href="">ძაღლების საფხაჭუნოები</a></li>
                                             <li><a href="">შამპუნები</a></li>
                                         </ul>
                                     </div>
@@ -377,138 +373,447 @@
                 </div>
             </div>
         </header>
-        <div class="header-for-responsive bg-colorfff" >
-            <div class="d-flex jc-between align-center">
-                <div class="d-flex align-center d-column">
-                    <a href="#">
-                        <img src="assets/images/home page/home-alt.svg" alt="home-icon">
-                    </a>
-                    <a class="resp-menu-list" href="index.html">მთავარი</a>
+        <main>
+            <div class="d-flex jc-between align-center container">
+                <div class="page-location">
+                    <span class="color6E6E6E">მთავარი</span>
+                    <img src="assets/images/home page/angle-down.svg" alt="">
+                    <span class="color6E6E6E">ძაღლები</span>
+                    <img src="assets/images/home page/angle-down.svg" alt="">
+                    <span class="page-location-active">ზრდასრული ძაღლები</span>
                 </div>
-                <div class="d-flex align-center d-column">
-                    <a href="#">
-                        <img src="assets/images/home page/search.svg" alt="search">
-                    </a>
-                    <a class="resp-menu-list" href="contact page.html">ძებნა</a>
-                </div>
-                <div class="menu-resp-box d-flex jc-center align-center">
-                    <button class="menu-resp">
-                        <div class="burger-menu"></div>
-                        <div class="burger-menu"></div>
-                        <div class="burger-menu"></div>
-                     </button>
-                </div>
-                <div class="d-flex align-center d-column">
-                    <a href="#">
-                        <img src="assets/images/home page/shopping-cart.svg" alt="shopping cart">
-                    </a>
-                    <a class="resp-menu-list" href="#">კალათა</a>
-                </div>
-                <div class="d-flex align-center d-column">
-                    <a href="#">
-                        <img src="assets/images/home page/smile.svg" alt="smile">
-                    </a>
-                    <a class="resp-menu-list" href="about.html">შესვლა</a>
+                <div>
+                    <label for="price">დალაგება: </label>
+                    <select name="price" id="chose-price">
+                        <option value="price up"class="">ფასის ზრდის</option>
+                        <option value="price down">ფასის კლების</option>
+                        <option selected value="all price">ნებისმიერი ფასი</option>
+                    </select>
                 </div>
             </div>
-        </div>
-        <section class="slider-sec">
-            <div class="container relative slide mySwiper">
-                <div class="main-img-box swiper-wrapper d-flex">
-                    <div class=" slides swiper-slide">
-                        <img class="main-img main-img1" src="assets/images/home page/main img3.webp" alt="">
-                        <div class="absolute home-main-img-text">
-                            <h1 class="font-size24px white text-align line-height">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
-                            <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
+            <div class="container d-flex">
+                <section class="chose-side flex1">
+                    <form action="">
+                        <div class="categories-box"> 
+                            <div class="category-name">
+                                <span>ფასი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div class="sliderValue relative">
+                                    <span class="left-price">150</span>
+                                    <span class="right-price">450</span>
+                                </div>
+                                <div class="range-slider">
+                                    <div class="progress"></div>
+                                    <input type="range" class="range-min" min="0" max="600" value="150">
+                                    <input type="range" class="range-max" min="0" max="600" value="450">
+                                </div>
+                                <div class="d-flex jc-between">
+                                    <div class="min-value numberVal">
+                                       <input type="number" min="0" max="600" value="150" disabled>
+                                    </div>
+                                    <div class="max-value numberVal">
+                                       <input type="number" min="0" max="600" value="450" disabled>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slides swiper-slide">
-                        <img class="main-img main-img2" src="assets/images/home page/main img2.png" alt="">
-                        <div class="absolute home-main-img-text">
-                            <h1 class="font-size24px white text-alignline-height">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
-                            <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ასაკი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="new-born" name="age" value="new-born"
+                                           checked>
+                                    <label for="new-born">ახალდაბადებული</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="little" name="age" value="little">
+                                    <label for="little">პატარა</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="adult" name="age" value="adult">
+                                    <label for="adult">ზრდასრული</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="old" name="age" value="old"
+                                           checked>
+                                    <label for="old">ხნიერი</label>
+                                </div>
+                            </div>                       
                         </div>
-                    </div>
-                    <div class=" slides swiper-slide">
-                        <img class="main-img main-img1" src="assets/images/home page/main img.jpg" alt="">
-                        <div class="absolute home-main-img-text">
-                            <h1 class="font-size24px white text-align line-height">მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h1>
-                            <button class="button-buy-now bg-colorfff">შეიძინე ეხლავე</button>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ცხოველის სახეობა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="cat" name="animal" value="cat"
+                                           checked>
+                                    <label for="cat">კატა</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="dog" name="animal" value="dog">
+                                    <label for="dog">ძაღლი</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="rabbit" name="animal" value="rabbit">
+                                    <label for="rabbit">კურდღელი</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="tortoise" name="animal" value="tortoise"
+                                           checked>
+                                    <label for="tortoise">კუ</label>
+                                </div>    
+                                <div>
+                                    <input type="radio" id="fish" name="animal" value="fish">
+                                    <label for="fish">თევზი</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="parrot" name="animal" value="parrot"
+                                           checked>
+                                    <label for="parrot">თუთიყუში</label>
+                                </div>               
+                            </div>    
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-button-left absolute side-click left bg-colorfff d-flex jc-center align-center">
-                    <img src="assets/images/home page/left.svg" alt="left">
-                </div>
-                <div class="swiper-button-right absolute side-click right bg-colorfff  d-flex jc-center align-center">
-                    <img src="assets/images/home page/right.svg" alt="right">
-                </div>
-                <div class="swiper-paginations absolute btn-main-sliders d-flex jc-center"></div>
-            </div>
-        </section> 
-        <section>
-            <div class="home-offers-box container d-flex jc-between flex-wrap">
-                <div class="offer-box1 offer-box d-flex jc-between padd30-58-30-31 border-rad10">
-                    <div class="offer-icon-box bg-colorE3F0D4 d-flex jc-center align-center border-rad6">
-                        <img src="assets/images/home page/brightness-empty.svg" alt="bright">
-                    </div>
-                    <h3>პროდუქტების <span>ფართო</span> არჩევანი</h3>
-                </div>
-                <div class="offer-box2 offer-box d-flex jc-between padd30-58-30-31 border-rad10">
-                    <div class="offer-icon-box bg-colorFDDFD2 d-flex jc-center align-center border-rad6">
-                        <img src="assets/images/home page/percentage.svg" alt="percent">
-                    </div>
-                    <h3><span>პრომოკოდის</span> მარტივი სისტემა</h3>
-                </div>
-                <div class="offer-box3 offer-box d-flex jc-between padd30-58-30-31 border-rad10">
-                    <div class="offer-icon-box bg-color3CABE0 opacity02 d-flex jc-center align-center border-rad6">
-                        <img src="assets/images/home page/credit-card.png" alt="credit">
-                    </div>
-                    <h3>მარტივი <span>ონლაინ გადახდა</span></h3>
-                </div>
-                <div class="offer-box4 offer-box d-flex jc-between padd30-58-30-31 border-rad10">
-                    <div class="offer-icon-box bg-colorCC96D0 opacity02 d-flex jc-center align-center border-rad6">
-                        <img src="assets/images/home page/truck.svg" alt="truck">
-                    </div>
-                    <h3>სწრაფი <span>მიტანის</span> სერვისი</h3>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container d-flex d-block flex-wrap">
-                <div class="flex1 border-rad10 relative dog-world-box d-flex d-column jc-center align-center">
-                    <div class="absolute">
-                        <h3 class="white">ძაღლთა სამყარო</h3>
-                        <h4 class="font-size24px font-size18-resp650 white line-height">საუკეთესო არჩევანი <span class="ont-size14-resp650 font-size18px">ერთგული მეგობრისთვის</span></h4>
-                        <a class="bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                    </div>
-                </div>
-                <div class="flex2 flex-wrap">
-                    <div class="d-flex fish-and-bird">
-                        <div class="border-rad10 fish-world-box relative">
-                            <img class="absolute fish-img" src="assets/images/home page/fish.png" alt="fish">
-                            <h4 class="absolute font-size24px font-size18-resp650 white line-height">შეუქმენი სასიამოვნო <span class="ont-size14-resp650 font-size18px">გარემო შენს თევზებს</span></h4>
-                            <a class="bg-colorfff absolute color-black fish-button border-rad6" href="#">პროდუქციის ნახვა</a>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ბრენდი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="brand1" name="brand" value="brand1"
+                                           checked>
+                                    <label for="brand1">ბრენდი 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="brand2" name="brand" value="brand2">
+                                    <label for="brand2">ბრენდი 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="brand3" name="brand" value="brand3">
+                                    <label for="brand3">ბრენდი 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="brand4" name="brand" value="brand4"
+                                           checked>
+                                    <label for="brand4">ბრენდი 4</label>
+                                </div>    
+                                <div>
+                                    <input type="radio" id="brand5" name="brand" value="brand5">
+                                    <label for="brand5">ბრენდი 5</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="brand6" name="brand" value="brand6"
+                                           checked>
+                                    <label for="brand6">ბრენდი 6</label>
+                                </div>                   
+                            </div>
                         </div>
-                        <div class="border-rad10 bird-world-box relative">
-                            <img class="absolute bird-img"src="assets/images/home page/bird.png" alt="bird">
-                            <h4 class="absolute font-size24px font-size18-resp650 white line-height"><span class="ont-size14-resp650 font-size18px">ყველანაირი აქსესუარი</span> ფრინველებისთვის</h4>
-                            <a class="bg-colorfff absolute color-black bird-button border-rad6" href="#">პროდუქციის ნახვა</a>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>მასალა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="material1" name="material" value="material1"
+                                           checked>
+                                    <label for="material1">მასალა 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="material2" name="material" value="material2">
+                                    <label for="material2">მასალა 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="material3" name="material" value="material3">
+                                    <label for="material3">მასალა 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="material4" name="material" value="material4"
+                                           checked>
+                                    <label for="material4">მასალა 4</label>
+                                </div>                   
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-rad10 cat-world-box  d-flex d-column jc-center align-center">
-                        <h4 class="text-align font-size24px font-size18-resp650 white line-height"><span class="ont-size14-resp650 font-size18px">100% ნატურალური საკვები</span> თქვენი კატებისათვის</h4>
-                        <a class="bg-colorfff color-black button-show-prod border-rad6" href="#">პროდუქციის ნახვა</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="resp-first-top-products">
-            <div class=" wrapper-top-products container">
-                <h2 class="container font-size18px color-black">ტოპ პროდუქცია</h2>
-                <div class="top-products swiper first-top-product-responsive">
-                    <div class="d-flex jc-between swiper-wrapper">
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ჯიში</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="breed1" name="breed" value="breed1"
+                                           checked>
+                                    <label for="breed1">ჯიში 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="breed2" name="breed" value="breed2">
+                                    <label for="breed2">ჯიში 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="breed3" name="breed" value="breed3">
+                                    <label for="breed3">ჯიში 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="breed4" name="breed" value="breed4"
+                                           checked>
+                                    <label for="breed4">ჯიში 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>საკვების კლასი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="foodClass1" name="foodClass" value="foodClass1"
+                                           checked>
+                                    <label for="foodClass1">კლასი 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="foodClass2" name="foodClass" value="foodClass2">
+                                    <label for="foodClass2">კლასი 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="foodClass3" name="foodClass" value="foodClass3">
+                                    <label for="foodClass3">კლასი 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="foodClass4" name="foodClass" value="foodClass4"
+                                           checked>
+                                    <label for="foodClass4">კლასი 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>გემო</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="taste1" name="taste" value="taste1"
+                                           checked>
+                                    <label for="taste1">გემო 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="taste2" name="taste" value="taste2">
+                                    <label for="taste2">გემო 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="taste3" name="taste" value="taste3">
+                                    <label for="taste3">გემო 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="taste4" name="taste" value="taste4"
+                                           checked>
+                                    <label for="taste4">გემო 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ზომა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="size1" name="size" value="size1"
+                                           checked>
+                                    <label for="size1">ზომა 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="size2" name="size" value="size2">
+                                    <label for="size2">ზომა 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="size3" name="size" value="size3">
+                                    <label for="size3">ზომა 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="size4" name="size" value="size4"
+                                           checked>
+                                    <label for="size4">ზომა 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ფორმა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="shape1" name="shape" value="shape1"
+                                           checked>
+                                    <label for="shape1">ფორმა 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="shape2" name="shape" value="shape2">
+                                    <label for="shape2">ფორმა 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="shape3" name="shape" value="shape3">
+                                    <label for="shape3">ფორმა 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="shape4" name="shape" value="shape4"
+                                           checked>
+                                    <label for="shape4">ფორმა 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>წონა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="600გრ" name="weight" value="600გრ"
+                                           checked>
+                                    <label for="600გრ"> 600 გრ</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="2კგ" name="weight" value="2კგ">
+                                    <label for="2კგ">2 კგ</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="5კგ" name="weight" value="5კგ">
+                                    <label for="5კგ">5 კგ</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="13კგ" name="weight" value="13კგ"
+                                           checked>
+                                    <label for="13კგ">13 კგ</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ოჯახი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="family1" name="family" value="family1"
+                                           checked>
+                                    <label for="family1">ოჯახი 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="family2" name="family" value="family2">
+                                    <label for="family2">ოჯახი 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="family3" name="family" value="family3">
+                                    <label for="family3">ოჯახი 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="family4" name="family" value="family4"
+                                           checked>
+                                    <label for="family4">ოჯახი 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>ხასიათი</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="character1" name="character" value="character1"
+                                           checked>
+                                    <label for="character1">ხასიათი 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="character2" name="character" value="character2">
+                                    <label for="character2">ხასიათი 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="character3" name="character" value="character3">
+                                    <label for="character3">ხასიათი 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="character4" name="character" value="character4"
+                                           checked>
+                                    <label for="character4">ხასიათი 4</label>
+                                </div>                   
+                            </div>
+                        </div>
+                        <div class="categories-box category-choise">
+                            <div class="category-name">
+                                <span>წყლის ტემპერატურა</span>
+                                <img src="assets/images/home page/angle-down.svg" alt="">  
+                            </div>
+                            <div class="open-category">
+                                <div>
+                                    <input type="radio" id="temperature1" name="temperature" value="temperature1"
+                                           checked>
+                                    <label for="temperature1">ტემპერატურა 1</label>
+                                </div>                       
+                                <div>
+                                    <input type="radio" id="temperature2" name="temperature" value="temperature2">
+                                    <label for="temperature2">ტემპერატურა 2</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="temperature3" name="temperature" value="temperature3">
+                                    <label for="temperature3">ტემპერატურა 3</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="temperature4" name="temperature" value="temperature4"
+                                           checked>
+                                    <label for="temperature4">ტემპერატურა 4</label>
+                                </div>      
+                            </div>                 
+                        </div>
+                        <div class="filtration">
+                            <button>ფილტრაცია</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="product-side flex3">
+                    <div class="d-flex flex-wrap product-side-box">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
+                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
+                            <h3><a href="product description.html">ROYAL CANIN</a></h3>
+                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                            <div class="d-flex flex-wrap">
+                                <div class="weight-box d-flex jc-center align-center">
+                                    <input type="radio" id="600kg" name="weight">
+                                    <label for="600kg">600 გრ.</label>
+                                </div>
+                                <div class="weight-box d-flex jc-center align-center">
+                                    <input type="radio" id="2kg" name="weight">
+                                    <label for=" 2kg">2 კგ.</label>
+                                </div>
+                                <div class="weight-box d-flex jc-center align-center">
+                                    <input type="radio" id="5kg" name="weight">
+                                    <label for="5kg">5კგ.</label>
+                                </div>
+                                <div class="weight-box d-flex jc-center align-center">
+                                    <input type="radio" id="13kg" name="weight">
+                                    <label for="13kg">13 კგ.</label>
+                                </div>
+                            </div>
+                            <div class="d-flex jc-between price">
+                                <div>
+                                    <span class="new-price">135 ₾</span> 
+                                    <span class="old-price">100 ₾</span>
+                                </div>
+                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -539,7 +844,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -570,7 +875,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -601,7 +906,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -632,7 +937,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -663,7 +968,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -694,7 +999,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -725,7 +1030,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -756,16 +1061,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="top-product-section relative">
-            <div class=" wrapper-top-products container">
-                <h2 class="container font-size28px color-black">ტოპ პროდუქცია</h2>
-                <div class="top-products swiper top-product-slider">
-                    <div class="d-flex jc-between swiper-wrapper">
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -796,7 +1092,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -827,517 +1123,7 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/right.svg" alt="">
-            </div>
-            <div class="swiper-button-prev bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/left.svg" alt="">
-            </div>
-        </section>
-        <section>
-            <div class="container d-flex jc-between pay-top-sale">
-                <div class="pay-card flex1 relative">
-                    <img src="assets/images/home page/card.jpg" alt="card">
-                    <h4 class="absolute font-size24px color-black">გამოიყენე ჩვენი, <span class="zootopia-color">ზ</span><span class="zootopia-color">ო</span><span class="zootopia-color">ო</span><span class="zootopia-color">ტ</span><span class="zootopia-color">ო</span><span class="zootopia-color">პ</span><span class="zootopia-color">ი</span><span class="zootopia-color">ა</span>ს ბარათი</h4>
-                </div>
-                <div class="flex1 relative rodent-product border-rad10">
-                    <h4><span class="font-size18px">ყველაფერი</span> მღრნელებისთვის</h4>
-                    <a class="bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                    <div class="absolute"></div>
-                    <img src="assets/images/home page/rabbit.png" alt="rabbit">
-                </div>
-                <div class="myTopSelling flex1 relative best-selling-box bg-colorfff border-rad10">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
-                            <div class="best-selling d-flex jc-center align-center d-column">
-                                <span class="d-block font-size24px white">135 ₾</span>
-                                <span class="d-block white line-through">160 ₾</span>
-                            </div>
-                            <div class="absolute content-best-selling d-flex d-column align-center">
-                                <img src="assets/images/home page/pedigree.png" alt="pedigree">
-                                <h3 class="color-black font-size18px">პედიგრი</h3>
-                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
-                            <div class="best-selling d-flex jc-center align-center d-column">
-                                <span class="d-block font-size24px white">115 ₾</span>
-                                <span class="d-block white">150 ₾</span>
-                            </div>
-                            <div class="absolute content-best-selling d-flex d-column align-center">
-                                <img src="assets/images/home page/pedigree.png" alt="pedigree">
-                                <h3 class="color-black font-size18px">პედიგრი</h3>
-                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
-                            <div class="best-selling d-flex jc-center align-center d-column">
-                                <span class="d-block font-size24px white">70 ₾</span>
-                                <span class="d-block white">100 ₾</span>
-                            </div>
-                            <div class="absolute content-best-selling d-flex d-column align-center">
-                                <img src="assets/images/home page/pedigree.png" alt="pedigree">
-                                <h3 class="color-black font-size18px">პედიგრი</h3>
-                                <a class=" best-selling-show-button padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-prev absolute side-click left bg-black d-flex jc-center align-center">
-                        <img src="assets/images/home page/white left.svg" alt="left">
-                    </div>
-                    <div class="button-next absolute side-click right bg-black d-flex jc-center align-center">
-                        <img src="assets/images/home page/white right.svg" alt="right">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="resp-top-product-wrapper">
-            <h2 class="container font-size18px color-black">ტოპ პროდუქცია</h2>
-            <div class="resp-top-product">
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-                <div><img src="assets/images/home page/pedigree.png" alt=""></div>
-            </div>
-            <div class="best-sellig-div-button">
-                <a class=" best-selling-show-button border-rad6" href="#">მეტი პროდუქციის ნახვა</a>
-            </div>
-        </section>
-        <section class="top-product-section relative">
-            <div class=" wrapper-top-products container">
-                <h2 class="container font-size28px color-black">ტოპ პროდუქცია</h2>
-                <div class="top-products swiper top-product-slider">
-                    <div class="d-flex jc-between swiper-wrapper">
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
-                            <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
-                            <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
-                            <h3>პედიგრი</h3>
-                            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
-                            <div class="d-flex jc-between price">
-                                <div>
-                                    <span class="new-price">135 ₾</span> 
-                                    <span class="old-price">100 ₾</span>
-                                </div>
-                                <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide top-products-item relative bg-colorfff border-rad10">
+                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
@@ -1369,63 +1155,37 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div>
+                        <ul class="page d-flex">
+                            <a href="#">
+                                <li><img src="assets/images/home page/left.svg" alt=""></li>
+                            </a>
+                            <a href="#">
+                                <li>1</li>
+                            </a>
+                            <a href="#">
+                                <li>2</li>
+                            </a>
+                            <a href="#">
+                                <li>3</li>
+                            </a>
+                            <a href="#">
+                                <li class="active-page">4</li>
+                            </a>
+                            <a href="#">
+                                <li>...</li>
+                            </a>
+                            <a href="#">
+                                <li>142</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="assets/images/home page/right.svg" alt=""></li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div class="swiper-button-next bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/right.svg" alt="">
-            </div>
-            <div class="swiper-button-prev bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/left.svg" alt="">
-            </div>
-        </section>
-        <section>
-            <div class="container border-rad10 relative bg-colorF5AD00 cover-natural-product">
-                <p class="absolute">100% ნატურალური პროდუქცია შენი საუკეთესო მეგობრისათვის</p>
-                <a class="absolute bg-colorfff color-black padding14px24px border-rad6"href="#">პროდუქციის ნახვა</a>
-                <img class="absolute" src="assets/images/home page/tortoise.png" alt="tortoise">
-            </div>
-        </section>
-        <section class="relative">
-            <h2 class="container font-size28px color-black">ბრენდები</h2>
-            <div  class="myBrends">
-                <div class="swiper-wrapper brands-imgBox">
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/eukanuba.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/chappi.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                </div>
-            </div>
-            <div class="swiper-next bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/right.svg" alt="">
-            </div>
-            <div class="swiper-prev bg-colorfff absolute d-flex jc-center align-center">
-                <img src="assets/images/home page/left.svg" alt="">
-            </div>
-        </section>
-        <section class="relative resp-myBrends">
-            <div  class="myBrends2">
-                <div class="swiper-wrapper brands-imgBox">
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/eukanuba.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/chappi.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/go.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/royal.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/grandorf.png" alt=""></div>
-                    <div class="swiper-slide brand-img-div"><img src="assets/images/brends img/perfect fit.png" alt=""></div>
-                </div>
-            </div>
-        </section>
+        </main>
         <footer class="footer-box">
             <div class="container">
                 <div class="d-flex jc-between footer-body">
@@ -1482,79 +1242,7 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="assets/app.js"></script>
-    <script src="assets/homePage.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-      <!-- Initialize Swiper -->
-    <script>
-         var swiper = new Swiper('.myBrends2', {
-      slidesPerView: 1.5,
-      spaceBetween: 15,
-    //   navigation: {
-    //     nextEl: '.swiper-next2',
-    //     prevEl: '.swiper-prev2',
-    //   },
-    });
-
-        var swiper = new Swiper('.myBrends', {
-      slidesPerView: 6,
-      spaceBetween: 26,
-      navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
-      },
-    });
-    var swiper = new Swiper(".first-top-product-responsive", {
-            slidesPerView: 1,
-            spaceBetween: 5,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-         },
-    );
-
-        var swiper = new Swiper(".top-product-slider", {
-            slidesPerView: 4,
-            spaceBetween: 26,
-            slidesPerGroup: 4,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-             el: ".swiper-pagination",
-            clickable: true,
-            },
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-         },
-    });
-    function slider(){
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        keyboard: {
-          enabled: true,
-        },
-        pagination: {
-          el: ".swiper-paginations",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-right",
-          prevEl: ".swiper-button-left",
-        },
-      });
-    }
-    slider();
-
-    var swiper = new Swiper(".myTopSelling", {
-        navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
-        },
-      });
-    </script>
 </body>
 </html>
