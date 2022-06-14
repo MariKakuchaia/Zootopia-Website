@@ -768,7 +768,7 @@ body{
 }
 .page-location{
     max-width: 1186px;
-    margin: 60px 0;
+    margin: 60px auto;
 }
 .page-location img{
     vertical-align: middle;
@@ -1017,18 +1017,106 @@ body{
 .flex2{
     flex:2;
 }
-.product-img{
-    background-color: red;
-    height: 400px;
+.imgs-box div{
+    padding: 20px;
+    box-shadow: 0px 0px 20px #597DBC0D;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.imgs-box img{
+    width: 60px;
+    height: 60px;
+}
+.product-main-img{
+    background-color: #FFFFFF;
+    width: 377px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 20px #597DBC0D;
+}
+.product-main-img img{
+    width: 150px;
+}
+.playbutton-box{
+    width: 100%;
+    height: 100%;
+    background-color: #F5621F;
+    opacity: 0.6;
+    top: 0;
+    left:0px;
+    z-index: 1;
+}
+.playbutton-box img{
+    z-index: 2;
+    width: 8px;
+    margin: 0 auto;
 }
 .product-about{
-    background-color: green;
-    height: 400px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px #597DBC0D;
+    height: 430px;
+}
+.product-about p{
+    width: 370px;
+    margin:30px 0;
+}
+.more-text{
+    display: none;
+}
+.product-seria{
+    margin: 14px 0 29px;
+}
+.product-seria img{
+    margin: 0 10px 0 30px;
+}
+.number{
+    width: 200px;
+    padding: 13px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    margin:30px auto;
+}
+.add-card{
+    width: 200px;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #74B42C;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.product-about button{
+    width:80px;
+    font-size: 12px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: #9C9C9C;
+    border-style: none;
 }
 .product-pay{
-    background-color: pink;
-    height: 400px;
+    width: 270px;
+    padding: 20px 0;
 }
+.choise-weight{
+    width: 350px;
+}
+.product-pay{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px #597DBC0D;
+    padding: 5px;
+    padding: 0 0 10px 20px;
+    margin-bottom: 30px;
+    height: 273px;
+}
+.brend-product-pay{
+    box-shadow: 0px 0px 20px #597DBC0D;
+    border-radius: 10px;
+}
+.brend-product-pay img{
+    width: 100%;
+}
+.pay-price{
+    padding-top: 30px;
+}
+
 @media (max-width:1231px) {
     .categories-box{
         justify-content: space-around ;
