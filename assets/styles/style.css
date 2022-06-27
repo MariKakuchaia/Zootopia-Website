@@ -215,6 +215,7 @@ body{
 .animal-menu-list li{
     color: #111111;
     list-style: none;
+    cursor: pointer;
 }
 .activelevel{
     color: #74B42C;
@@ -766,9 +767,14 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+.contact-section{
+    max-width: 1186px;
+    width: 90%;
+    margin: 0 auto;
+}
 .page-location{
     max-width: 1186px;
-    margin: 60px auto;
+    margin: 60px 0;
 }
 .page-location img{
     vertical-align: middle;
@@ -829,6 +835,9 @@ body{
     outline: none;
     color:#F5621F;
     font-size: 14px;
+}
+.resp-price{
+    display: none;
 }
 .flex3{
     flex: 3;
@@ -990,12 +999,17 @@ body{
     padding: 19px 0 22px;
     width: 100%;
 }
+.filter{
+    display: none;
+}
 .category-product{
-    height: 440px;
     width: 277px;
     padding: 5x;
     margin: 5px;
     box-shadow: 0px 0px 20px #597DBC0D;
+}
+.resp-page-numb{
+    display: none;
 }
 .page{
     flex-direction: row;
@@ -1008,8 +1022,10 @@ body{
 .page li{
     margin: 10px;
     padding: 16px;
-    color: #111111;
     border-radius: 4px;
+}
+.page a{
+    color: #111111;
 }
 .active-page{
   background-color: #74B42C;  
@@ -1091,9 +1107,13 @@ body{
     color: #9C9C9C;
     border-style: none;
 }
+.resp-about-text{
+    display: none;
+}
 .product-pay{
     width: 270px;
     padding: 20px 0;
+    margin: 0 auto;
 }
 .choise-weight{
     width: 350px;
@@ -1116,7 +1136,17 @@ body{
 .pay-price{
     padding-top: 30px;
 }
-
+.resp-pay-price{
+    display: none;
+}
+.resp-choise-weight{
+    display: none;
+}
+@media (max-width:1276px) {
+    .product-side-box{
+        justify-content: center;
+    }
+}
 @media (max-width:1231px) {
     .categories-box{
         justify-content: space-around ;
@@ -1160,6 +1190,25 @@ body{
     top:102px;
     width: 250px;
    }
+   .swiper-wrapper{
+    justify-content: center;
+   }
+}
+@media(max-width:964px){
+    .product-img{
+        width: 50%;
+    }
+    .product-about{
+        width: 50%;
+    }
+    .product-about p{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .choise-weight{
+        width: 90%;
+        justify-content: center;
+    }
 }
 @media(max-width:950px){
     .pay-top-sale{
@@ -1249,6 +1298,83 @@ body{
         flex-direction: column;
         margin-bottom: -100px;
     }
+    .product-about p{
+        display: none;
+    }
+    .product-about button{
+        display: none;
+    }
+    .choise-weight{
+        display: none;
+    }
+    .brend-product-pay{
+        display: none;
+    }
+    .resp-about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .resp-about-text p{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .resp-about-text div{
+        display: inline-block;
+        margin: 20px auto;
+    }
+    .resp-about-text button{
+        width:80px;
+        font-size: 12px;
+        background-color: #FFFFFF;
+        color: #9C9C9C;
+        border-style: none;
+    }
+    .product-about{
+        height: 60px;
+        order:1;
+        width: 377px;
+    }
+    .product-main-img{
+        margin: 20px 0;
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .product-img{
+        order: 2;
+        flex-direction: column-reverse;
+        width: 377px;
+    }
+    .imgs-box{
+        flex-direction: row;
+    }
+    .imgs-box div{
+        padding: 10px;
+    }
+    .pay-price-box{
+        order: 3;
+        margin: 25px 0;
+    }
+    .product-description{
+        flex-direction: column;
+    }
+    .pay-price{
+        display: none;
+    }
+    .product-pay{
+        box-shadow: none;
+        width: 100%;
+    }
+    .resp-pay-price{
+        display: inline-block;
+    }
+    .resp-choise-weight{
+        display: flex;
+    }
+    .resp-choise-weight div{
+        width: 43%;
+    }
 }
 @media (max-width:700px) {
     .offer-box{
@@ -1303,7 +1429,6 @@ body{
         font-size: 14px;
     }
 }
-
 @media (max-width:650px) {
     .footer-nav{
         margin-right: 0;
@@ -1378,11 +1503,46 @@ body{
         height: 130px;
         margin-bottom: 10px;
     }
+    .filter{
+        display: inline-block;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        height: 55px;
+        box-shadow: 0px 0px 20px #597DBC0D;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .filter input{
+        border-style: none;
+    }
+    .filter label{
+        position: absolute;
+        font-size: 14px;
+    }
+    .category-place-and-price-box{
+        display: none;
+    }
     .page-location :first-child{
         display: none;
     }
     .page-location img{
         display: none;
+    }
+    .resp-price{
+        display: inline-block;
+        margin: 120px 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .resp-price label{
+        font-size: 14px;
+    }
+    .resp-price select{
+        font-size: 14px;
     }
     .about-page-body{
         margin-top: 150px;
@@ -1398,6 +1558,17 @@ body{
     }
     .info-aboutus{
         margin-top: 200px;
+    }
+}
+@media(max-width:555px){
+    .chose-side{
+        display: none;
+    }
+    .category-product{
+        width: 90%;
+    }
+    .pages-number-box{
+        display: none;
     }
 }
 @media (max-width:520px) {
@@ -1420,6 +1591,10 @@ body{
     }
     .brand-img-div img{
         height: 90px;
+    }
+    .resp-page-numb{
+        display: flex;
+        margin: 20px 0;
     }
 }
 @media (max-width:400px) {
@@ -1513,5 +1688,53 @@ body{
     }
     .best-selling{
         display: none;
+    }
+    .footer-bottom{
+        margin-top: 20px;
+    }
+    .product-main-img{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .product-description{
+        justify-content: center;
+    }
+    .product-about{
+        width: 250px;
+    }
+    .imgs-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .imgs-box div{
+        width: 40px;
+        height: 40px;
+    }
+    .imgs-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .product-about{
+        width: 90%;
+    }
+    .product-img{
+        width: 90%;
+    }
+    .product-main-img{
+        width: 90%;
+    }
+    .resp-choise-weight{
+        width: 90%;
+    }
+    .add-card{
+        width: 90%;
+    }
+    .number{
+        width: 90%;
+    }
+}
+@media(max-width:310px){
+    .weight-box{
+        width: 60px;
     }
 }

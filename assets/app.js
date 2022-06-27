@@ -77,65 +77,27 @@ minInput.oninput = (()=>{
     let value = minInput.value;
     leftPrice.textContent = value;
     leftPrice.style.left = (value/10) + "%";
-})
+});
 
 maxInput.oninput = (()=>{
     let value = maxInput.value;
     rightPrice.textContent = value;
     rightPrice.style.left = (value/7) + "%";
-})
+});
 
 
 function showList(){
-    const categoryNameImg = document.querySelectorAll('.category-name img');
-    const openCategory = document.querySelectorAll('.open-category');
-
-    categoryNameImg[0].addEventListener('click',()=>{
-        openCategory[0].classList.toggle('open-category-active');
+    let categoriesToggleAll = document.querySelectorAll('.category-name'); //კატეგორიის მთლიან სახელზე მოხდება ამ დროს კლიკი 
+    categoriesToggleAll.forEach(category => {
+        category.addEventListener('click', function(){       
+            let element = category.nextElementSibling; //კატეგორიების სია
+            element.classList.toggle("open-category-active");    
+        })
     })
-    categoryNameImg[1].addEventListener('click',()=>{
-        openCategory[1].classList.toggle('open-category-active');
-    })
-    categoryNameImg[2].addEventListener('click',()=>{
-        openCategory[2].classList.toggle('open-category-active');
-    })
-    categoryNameImg[3].addEventListener('click',()=>{
-        openCategory[3].classList.toggle('open-category-active');
-    })
-    categoryNameImg[4].addEventListener('click',()=>{
-        openCategory[4].classList.toggle('open-category-active');
-    })
-    categoryNameImg[5].addEventListener('click',()=>{
-        openCategory[5].classList.toggle('open-category-active');
-    })
-    categoryNameImg[6].addEventListener('click',()=>{
-        openCategory[6].classList.toggle('open-category-active');
-    })
-    categoryNameImg[7].addEventListener('click',()=>{
-        openCategory[7].classList.toggle('open-category-active');
-    })
-    categoryNameImg[8].addEventListener('click',()=>{
-        openCategory[8].classList.toggle('open-category-active');
-    })
-    categoryNameImg[9].addEventListener('click',()=>{
-        openCategory[9].classList.toggle('open-category-active');
-    })
-    categoryNameImg[10].addEventListener('click',()=>{
-        openCategory[10].classList.toggle('open-category-active');
-    })
-    categoryNameImg[11].addEventListener('click',()=>{
-        openCategory[11].classList.toggle('open-category-active');
-    })
-    categoryNameImg[12].addEventListener('click',()=>{
-        openCategory[12].classList.toggle('open-category-active');
-    })
-    categoryNameImg[13].addEventListener('click',()=>{
-        openCategory[13].classList.toggle('open-category-active');
-    })
-}
+};
 showList();
 
- 
+
 
 
 

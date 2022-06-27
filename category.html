@@ -374,7 +374,7 @@
             </div>
         </header>
         <main>
-            <div class="d-flex jc-between align-center container">
+            <div class="d-flex jc-between align-center container flex-wrap category-place-and-price-box">
                 <div class="page-location">
                     <span class="color6E6E6E">მთავარი</span>
                     <img src="assets/images/home page/angle-down.svg" alt="">
@@ -390,6 +390,21 @@
                         <option selected value="all price">ნებისმიერი ფასი</option>
                     </select>
                 </div>
+            </div>
+            <div class="resp-price">
+                <label for="price">დალაგება: </label>
+                <select name="price" id="chose-price">
+                    <option value="price up">ფასის ზრდის</option>
+                    <option value="price down">ფასის კლების</option>
+                    <option selected value="all price">ნებისმიერი ფასი</option>
+                </select>
+            </div>
+            <div class="filter">
+                <form action="">
+                    <label for="filter">ფილტრაცია</label>
+                    <input type="text" id="filter">
+                    <img src="assets/images/filter.svg" alt="filter">
+                </form>
             </div>
             <div class="container d-flex">
                 <section class="chose-side flex1">
@@ -782,29 +797,31 @@
                 </section>
                 <section class="product-side flex3">
                     <div class="d-flex flex-wrap product-side-box">
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3><a href="product description.html">ROYAL CANIN</a></h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod1-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod1-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod1-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod1-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -813,29 +830,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod2-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod2-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod2-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod2-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -844,29 +863,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod3-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod3-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod3-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod3-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -875,29 +896,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod4-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod4-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod4-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod4-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -906,29 +929,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod5-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod5-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod5-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod5-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -937,29 +962,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod6-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod6-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod6-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod6-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -968,29 +995,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod7-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod7-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod7-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod7-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -999,29 +1028,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod8-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod8-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod8-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod8-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -1030,29 +1061,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod9-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod9-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod9-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod9-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -1061,29 +1094,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod10-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod10-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod10-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod10-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -1092,29 +1127,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod11-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod11-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod11-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod11-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -1123,29 +1160,31 @@
                                 <span class="shopping-cart-icon"><img src="assets/images/home page/shopping-cart (1).svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="swiper-slide category-product top-products-item relative bg-colorfff border-rad10">
+                        <div class="category-product top-products-item relative bg-colorfff border-rad10">
                             <span class="absolute percent-icon"><img src="assets/images/home page/percentage (1).svg" alt=""></span>
                             <img class="pedigre absolute"src="assets/images/home page/pedigree.png" alt="">
                             <h3>პედიგრი</h3>
                             <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-                            <div class="d-flex flex-wrap">
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="600kg" name="weight">
-                                    <label for="600kg">600 გრ.</label>
+                            <form action="">
+                                <div class="d-flex flex-wrap jc-center">
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="600kg" name="prod12-weight">
+                                        <label for="600kg">600 გრ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="2kg" name="prod12-weight">
+                                        <label for=" 2kg">2 კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="5kg" name="prod12-weight">
+                                        <label for="5kg">5კგ.</label>
+                                    </div>
+                                    <div class="weight-box d-flex jc-center align-center">
+                                        <input type="radio" id="13kg" name="prod12-weight">
+                                        <label for="13kg">13 კგ.</label>
+                                    </div>
                                 </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="2kg" name="weight">
-                                    <label for=" 2kg">2 კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="5kg" name="weight">
-                                    <label for="5kg">5კგ.</label>
-                                </div>
-                                <div class="weight-box d-flex jc-center align-center">
-                                    <input type="radio" id="13kg" name="weight">
-                                    <label for="13kg">13 კგ.</label>
-                                </div>
-                            </div>
+                            </form>
                             <div class="d-flex jc-between price">
                                 <div>
                                     <span class="new-price">135 ₾</span> 
@@ -1155,32 +1194,37 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="resp-page-numb d-flex jc-center">
+                        <div>4</div>
+                        <div>/</div>
+                        <div>22</div>
+                    </div>
+                    <div class="pages-number-box">
                         <ul class="page d-flex">
-                            <a href="#">
-                                <li><img src="assets/images/home page/left.svg" alt=""></li>
-                            </a>
-                            <a href="#">
-                                <li>1</li>
-                            </a>
-                            <a href="#">
-                                <li>2</li>
-                            </a>
-                            <a href="#">
-                                <li>3</li>
-                            </a>
-                            <a href="#">
-                                <li class="active-page">4</li>
-                            </a>
-                            <a href="#">
-                                <li>...</li>
-                            </a>
-                            <a href="#">
-                                <li>142</li>
-                            </a>
-                            <a href="#">
-                                <li><img src="assets/images/home page/right.svg" alt=""></li>
-                            </a>
+                            <li>
+                                <a href="#"><img src="assets/images/home page/left.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li class="active-page">
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                            <li>
+                                <a href="#">142</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/images/home page/right.svg" alt=""></a>
+                            </li>
                         </ul>
                     </div>
                 </section>
